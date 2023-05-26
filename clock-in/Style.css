@@ -1,0 +1,121 @@
+body {
+            background-image: url(background.jpg);
+            background-size: cover;  
+            background-position: center;  
+            height: 100vh; 
+            width: 100%; 
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .card {
+            width: 400px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .card h3 {
+            font-size: 15px;
+            margin-bottom: 50px;
+            color: #333;
+        }
+
+        .card label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+            text-align: left;
+        }
+
+        .card input[type="text"],
+        .card input[type="password"],
+        .card input[type="date"],
+        .card select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            box-sizing: border-box;
+            margin-bottom: 10px;  
+        }
+
+        .card input[type="submit"] {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .card input[type="submit"]:hover {
+            background-color: #0c270d;
+        }
+
+
+        #clock {
+            font-size: 48px;
+            text-align: center;
+            margin-top: 50px;
+            color: #4caf50;
+        }
+        
+        #date {
+            font-size: 16px;
+            margin-top: 10px;
+            color: black;
+        }
+
+        .card .separator {
+            border-top: 2px solid #4caf50;
+            margin: 20px 0;
+        }
+
+        .captcha {
+            align-items: center;
+            width: 30%;
+            padding-left: 35%; 
+            
+        }
+        
+        .imagem-captcha {
+            margin: 20px;
+            padding: 2px;
+            background-color: rgb(252, 252, 236) ;
+            border-radius: 0px;
+            font-size: 20px; 
+            color: #4caf50;
+            font-family: 'Times New Roman', Times, serif;
+            margin-bottom: 2px;
+            letter-spacing: 2px;
+            font-weight: bold;
+            
+        }
+
+        .erro-temporario {
+            background-color: white;
+            color: #ff0000;
+            font-size: 14px;
+            margin: 10px 0;
+            padding: 5px;
+          }
+          
+          
+
+
+        

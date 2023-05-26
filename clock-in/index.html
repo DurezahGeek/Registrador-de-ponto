@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Seção de cabeçalho -->
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <link rel="shortcut icon" href="1.png" type="imagem/png">
+    <title>Jornada De Trabalho</title>
+</head>
+    <!--Cabeçalho-->
+<body>
+    <div class="container">
+        <div class="card">
+        <h3>Horário de Brasília</h3>
+        <div id="clock"></div>
+        <div id="date"></div>
+        <hr class="separator">
+    
+    
+    <!--<label> campo de entrada , <input> e <select> coletador de dados-->
+    <form onsubmit="exibirMensagem();">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
+
+        <label for="data">Data:</label>
+        <input type="date" id="data" name="data" required>
+
+        <label for="acao">Ação:</label>
+        <select id="acao" name="acao" required>
+            <option value="">Selecione</option>
+            <option value="entrada">Entrada</option>
+            <option value="intervalo">Intervalo</option>
+            <option value="saida">Saída</option>
+        </select>
+
+        <!--Elemento captcha-->
+        <div class="captcha">
+            <label for="captcha-input"></label>
+            <div class="imagem-captcha">
+                <span id="texto-captcha"></span>
+            </div>
+            <input type="text" id="captcha-input" name="captcha-input" required>
+            <p id="mensagem"></p>
+            <p id="pontos"></p> 
+        </div>
+        
+        <input type="submit" value="Registrar Ponto">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
